@@ -86,7 +86,7 @@
     // the user isn't logged in to Facebook.
   }
  });
-  
+
   };
 
   // Load the SDK asynchronously
@@ -120,11 +120,11 @@
 
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">login
 </fb:login-button>
-<button onclick="hola()">boton</button>
+<button onclick="FB.getLoginStatus()">boton</button>
 <div id="status">
 <script type="text/javascript">
 	function hola(){
-		alert(FB.getLoginStatus());
+		alert(checkLoginState());
 		if(FB.getLoginStatus() == "conected")
 			alert("hola");
 	};
