@@ -103,14 +103,14 @@
 
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">login
 </fb:login-button>
-<button onclick="myFunction()">boton</button>
+<button onclick="hola()">boton</button>
 <div id="status">
 <script type="text/javascript">
 	function hola(){
-		document.getElementB
+		alert(FB.getLoginStatus());
 		if(FB.getLoginStatus() == "conected")
 			alert("hola");
-	}
+	};
 </script>
 </div>
 </body>
