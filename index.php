@@ -47,7 +47,7 @@
 
   window.fbAsyncInit = function() {
   FB.init({
-    appId      : '{your-app-id}',
+    appId      : '1080759488613786',
     cookie     : true,  // enable cookies to allow the server to access 
                         // the session
     xfbml      : true,  // parse social plugins on this page
@@ -91,24 +91,9 @@
         'Thanks for logging in, ' + response.name + '!';
     });
   }
-</script>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '1080759488613786',
-      xfbml      : true,
-      version    : 'v2.5'
-    });
-  };
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
 </script>
+
 
 <!--
   Below we include the Login Button social plugin. This button uses
@@ -118,7 +103,14 @@
 
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">login
 </fb:login-button>
-
+<button onclick="myFunction()">boton</button>
 <div id="status">
+<script type="text/javascript">
+	function hola(){
+		document.getElementB
+		if(FB.getLoginStatus() == "conected")
+			alert("hola");
+	}
+</script>
 </div>
 </body>
